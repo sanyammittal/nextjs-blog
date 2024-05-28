@@ -1,8 +1,7 @@
 "use client";
 import { useRef, useState } from "react";
-import classes from "./page.module.css";
-import Link from "next/link";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import classes from "../page.module.css";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "@/firebase";
 import { useRouter } from "next/navigation";
 
@@ -19,17 +18,17 @@ export default function Login() {
       : setShowPassword("password");
   };
 
-  const loginHandler = (event) => {
+  const createAccountHandler = (event) => {
     event.preventDefault();
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
 
-    signInWithEmailAndPassword(auth, email, password)
+    createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        emailRef.current.value = "";
-        passwordRef.current.value = "";
         const user = userCredential.user;
         navigate.push(`/${user.uid}`);
+        emailRef.current.value = "";
+        passwordRef.current.value = "";
         event.target.reset();
         setShowPassword("password");
       })
@@ -44,8 +43,8 @@ export default function Login() {
 
   return (
     <div className={classes.container}>
-      <h1>Login Account</h1>
-      <form onSubmit={loginHandler}>
+      <h1>Create Account</h1>
+      <form onSubmit={createAccountHandler}>
         <label htmlFor="email">Email</label>
         <input
           type="email"
@@ -65,11 +64,8 @@ export default function Login() {
         />
         {wrongData && <p className={classes.errorText}>Invalid Password!!</p>}
         <input type="checkbox" onChange={showPasswordHandler} /> Show Password
-        <input type="submit" value="LOGIN" />
+        <input type="submit" value="SIGNUP" />
       </form>
-      <p className={classes.noAccount}>
-        Don't have Account : <Link href="/signup">SignUp</Link>
-      </p>
     </div>
   );
 }

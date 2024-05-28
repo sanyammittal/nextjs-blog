@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+
+.container {
+  font-family: "Ubuntu Sans", sans-serif;
+  margin: 50px auto;
+  max-width: 900px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.container p {
+  font-size: 1.2rem;
+  font-weight: 350;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 5px;
+}
+
+.container form {
+  margin-top: 20px;
+}
+
+.container label {
+  display: block;
+  font-size: 1.2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.container input[type="text"],
+.container select,
+.container textarea {
+  width: 99%;
+  font-family: "Josefin Sans", sans-serif;
+  height: 40px;
+  border-bottom: 1px solid black;
+  font-size: 1.4rem;
+  font-weight: 350;
+  color: #393838;
+  padding-left: 10px;
+  border: 1px solid black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.container textarea {
+  width: 99%;
+  height: 250px;
+  padding-top: 5px;
+}
+
+.container div label {
+  display: inline-block;
+  width: 49%;
+}
+
+.container div input[type="text"],
+.container div select {
+  width: 99%;
+}
+
+.container div .categoryLabel {
+  margin-left: 10px;
+}
+
+.container .submitButton {
+  width: 80%;
+  height: 40px;
+  display: block;
+  margin: auto;
+  font-size: 1.3rem;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .container div .categoryLabel {
+    margin-left: 5px;
+  }
+  .container div input[type="text"],
+  .container div select {
+    width: 95%;
+  }
+}

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap");
+
+.new_blog_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f2ecec;
+  margin-bottom: 50px;
+}
+
+.new_blog_container .image {
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: -40px;
+  height: 370px;
+  width: 370px;
+}
+
+.new_blog_container div {
+  margin-top: 70px;
+  width: 800px;
+}
+
+.new_blog_container p {
+  font-size: 3rem;
+  font-family: "Briem Hand", cursive;
+  font-weight: 600;
+  color: black;
+}
+
+.new_blog_container button {
+  display: block;
+  font-size: 1.6rem;
+  padding: 10px 50px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1171px) {
+  .new_blog_container p {
+      text-align: center;
+      margin: 0 20px;
+  }
+  .new_blog_container button {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 643px) {
+  .new_blog_container .image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .new_blog_container p {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .new_blog_container button {
+    font-size: 1.1rem;
+  }
+}

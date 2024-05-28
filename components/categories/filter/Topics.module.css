@@ -1,0 +1,39 @@
+.topic {
+  flex-basis: 13%;
+  height: 400px;
+  padding-left: 2%;
+  border-right: 1px solid #ccc;
+}
+
+.topic p {
+  color: #565555;
+  font-weight: bold;
+}
+
+.topic .link {
+  list-style: none;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+.topic .link li {
+  margin-top: 15px;
+  cursor: pointer;
+  color: #3a3939;
+}
+
+.topic .link li:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.topic .activate li {
+  text-decoration: underline;
+  color: black;
+}
+
+@media screen and (max-width: 1171px) {
+  .topic {
+    display: none;
+  }
+}

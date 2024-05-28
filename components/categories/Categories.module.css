@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+.categories_container {
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.categories {
+  flex-basis: 88%;
+}
+
+.categories .category_title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 40px;
+  padding-right: 5%;
+}
+
+.categories h1 {
+  margin-left: 7.5%;
+  margin-bottom: 20px;
+}
+
+.categories .bars {
+  display: none;
+  padding: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  outline: none;
+}
+
+.noBlog {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1170px) {
+  .categories {
+    flex-basis: 100%;
+  }
+  .categories .bars {
+    display: block;
+  }
+}

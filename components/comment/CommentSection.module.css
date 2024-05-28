@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.container {
+  height: 100px;
+  width: 70%;
+  margin: 10px auto;
+}
+
+.container h1{
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #353535;
+}
+
+.container .noComment{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 50px;
+    padding-bottom: 40px;
+    font-family: "Encode Sans Expanded", sans-serif;
+}
+.container .extraSpace{
+    height: 50px;
+}

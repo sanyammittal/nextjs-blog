@@ -1,0 +1,42 @@
+.preview {
+  width: 200px;
+  height: 150px;
+  float: left;
+  margin-bottom: 30px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.preview p {
+  color: #3c3c3c;
+  margin: 0;
+  padding: 1rem;
+}
+
+.preview .image {
+  object-fit: cover;
+}
+
+.imageContainer button {
+  font-size: 1.3rem;
+  background-color: transparent;
+  margin-left: 50px;
+  padding: 5px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.imageContainer input[type="file"] {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .imageContainer button {
+    padding: 5px 25px;
+  }
+}
